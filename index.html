@@ -4,68 +4,162 @@
 <head>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Shreya's Portfolio</title>
+          <title>Shreya Singh | Portfolio</title>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="style.css" />
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+          <script defer src="script.js"></script>
 </head>
 
 <body>
-          <header>
-                    <nav>
-                              <h1>Shreya</h1>
-                              <ul>
-                                        <li><a href="#projects">Projects</a></li>
-                                        <li><a href="#about">About Me</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                              </ul>
-                    </nav>
-          </header>
+          <div class="container">
 
-          <section class="hero">
-                    <div class="hero-content">
-                              <h2>Hi, I'm Shreya</h2>
-                              <p>A passionate beginner web developer exploring HTML, CSS, JavaScript, and Python.</p>
-                              <a href="#projects" class="btn">See My Work</a>
-                    </div>
-          </section>
+                    <header>
+                              <h1>Shreya Singh</h1>
+                              <nav>
+                                        <a href="#about">About</a>
+                                        <a href="#certificates">Certificates</a>
+                                        <a href="#contact">Contact</a>
+                              </nav>
+                    </header>
 
-          <section id="projects" class="projects">
-                    <h2>My Projects</h2>
-                    <div class="project-list">
-                              <div class="project-card">
-                                        <h3>Project One</h3>
-                                        <p>A cool project made with HTML & CSS.</p>
-                                        <a href="#" target="_blank" class="btn-secondary">View Code</a>
+                    <section id="about" class="about-section">
+                              <div class="about-img-container">
+                                        <img src="certificates/IMG-20250715-WA0017.jpg" alt="Shreya Singh"
+                                                  class="about-img" />
                               </div>
-                              <div class="project-card">
-                                        <h3>Project Two</h3>
-                                        <p>Interactive JavaScript project.</p>
-                                        <a href="#" target="_blank" class="btn-secondary">View Code</a>
+                              <div class="about-text">
+                                        <h2>Hey, I’m <span class="highlight">Shreya Singh</span></h2>
+                                        <p>
+                                                  B.Sc. IT student passionate about coding and creative problem-solving.
+                                                  I love crafting web experiences and constantly learning new tech.
+                                        </p>
+                                        <p class="dynamic-text"></p>
                               </div>
-                              <div class="project-card">
-                                        <h3>Project Three</h3>
-                                        <p>Python backend web app demo.</p>
-                                        <a href="#" target="_blank" class="btn-secondary">View Code</a>
+                    </section>
+
+                    <section id="certificates" class="certificates-section">
+                              <h2>My Certificates</h2>
+                              <div class="certificates-grid">
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Time-management certificate-page-001.jpg"
+                                                            alt="Time Management" onclick="openModal(this)" />
+                                                  <p>Time Management</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Basic of python certificate-page-001.jpg"
+                                                            alt="Python Basics" onclick="openModal(this)" />
+                                                  <p>Python Basics</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Email certificate-page-001.jpg"
+                                                            alt="Email Skills" onclick="openModal(this)" />
+                                                  <p>Email Skills</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Presentation certificate-page-001.jpg"
+                                                            alt="Presentation Skills" onclick="openModal(this)" />
+                                                  <p>Presentation Skills</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/soft engin & aiglie certificate-page-001.jpg"
+                                                            alt="Software Engineering & Agile"
+                                                            onclick="openModal(this)" />
+                                                  <p>Software Engg & Agile</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Agile scrum certificate-page-001.jpg"
+                                                            alt="Agile Scrum" onclick="openModal(this)" />
+                                                  <p>Agile Scrum</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/NOSQL certificate-page-001.jpg" alt="NoSQL"
+                                                            onclick="openModal(this)" />
+                                                  <p>NoSQL</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Python P-1 certificate-page-001.jpg"
+                                                            alt="Python Part 1" onclick="openModal(this)" />
+                                                  <p>Python - Part 1</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Python P-2 certificate-page-001.jpg"
+                                                            alt="Python Part 2" onclick="openModal(this)" />
+                                                  <p>Python - Part 2</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/OOPs Python certificate-page-001.jpg"
+                                                            alt="OOPs in Python" onclick="openModal(this)" />
+                                                  <p>OOPs in Python</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/DBMS P-1 certificate-page-001.jpg"
+                                                            alt="DBMS Part 1" onclick="openModal(this)" />
+                                                  <p>DBMS - Part 1</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/DBMS P-2 certificate-page-001.jpg"
+                                                            alt="DBMS Part 2" onclick="openModal(this)" />
+                                                  <p>DBMS - Part 2</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/Python foundation Certificate-page-001.jpg"
+                                                            alt="Python Foundation" onclick="openModal(this)" />
+                                                  <p>Python Foundation</p>
+                                        </div>
+
+                                        <div class="cert-card">
+                                                  <img src="certificates/IISRO certificate-page-001.jpg" alt="IISRO"
+                                                            onclick="openModal(this)" />
+                                                  <p>IISRO Certificate</p>
+                                        </div>
+
                               </div>
-                    </div>
-          </section>
+                    </section>
 
-          <section id="about" class="about">
-                    <h2>About Me</h2>
-                    <p>I’m learning web development and enjoy combining front-end and back-end technologies to build
-                              cool projects.</p>
-          </section>
+                    <section id="contact" class="contact-section">
+                              <h2>Get In Touch</h2>
+                              <div class="contact-cards">
+                                        <div class="contact-card">
+                                                  <span>📞</span>
+                                                  <p>+91 7721986460</p>
+                                        </div>
+                                        <div class="contact-card">
+                                                  <span>📸</span>
+                                                  <a href="https://instagram.com/sshhrreya" target="_blank"
+                                                            rel="noopener noreferrer">@sshhrreya</a>
+                                        </div>
+                                        <div class="contact-card">
+                                                  <span>🔗</span>
+                                                  <a href="https://linkedin.com/in/shreya-singh-935239361"
+                                                            target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                        </div>
+                                        <div class="contact-card">
+                                                  <span>🐱</span>
+                                                  <a href="https://github.com/Shreya5989" target="_blank"
+                                                            rel="noopener noreferrer">GitHub</a>
+                                        </div>
+                              </div>
+                    </section>
 
-          <section id="contact" class="contact">
-                    <h2>Contact Me</h2>
-                    <p>Email: shreya@example.com</p>
-                    <p>LinkedIn: <a href="https://linkedin.com/in/shreya-singh-935239361" target="_blank">linkedin.com/in/shreya</a></p>
-          </section>
+          </div>
 
-
-          <footer>
-                    <p>© 2025 Shreya's Portfolio</p>
-          </footer>
+          <!-- Modal -->
+          <div id="modal" class="modal" onclick="closeModal(event)">
+                    <img id="modal-img" src="" alt="Certificate full view" />
+          </div>
 </body>
 
 </html>
